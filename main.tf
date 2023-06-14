@@ -8,8 +8,11 @@ resource "aws_ssm_parameter" "params" {
 
 variable "params" {
   default = [
-    { name = "demo1", type = "String", value = "demo1" },
-    { name = "demo2", type = "String", value = "demo2" }
+    { name = "roboshop.dev.frontend.catalogue_url", type = "String", value = "https://catalogue-dev.rkdevops.store" },
+    { name = "roboshop.dev.frontend.user_url", type = "String", value = "https://user-dev.rkdevops.store" },
+    { name = "roboshop.dev.frontend.cart_url", type = "String", value = "https://cart-dev.rkdevops.store" },
+    { name = "roboshop.dev.frontend.payment_url", type = "String", value = "https://payment-dev.rkdevops.store" },
+    { name = "roboshop.dev.frontend.shipping_url", type = "String", value = "https://shipping-dev.rkdevops.store" }
   ]
 }
 
